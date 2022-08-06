@@ -21,8 +21,6 @@
         <tr class="table-danger">
             <th>#</th>
             <th>음악</th>
-            <th>작성일시</th>
-            <th> </th>
             <th> </th>
         </tr>
         </thead>
@@ -34,7 +32,6 @@
             <td>
                 {{ music.title }} - {{ music.artist }}</a>
             </td>
-            <td>{{ music.create_date.time }}</td>
             <td class="my-3">
                 <a href="javascript:void(0)" data-uri="{% url 'pickever:music_vote' music.id  %}"
                class="recommend btn btn-sm btn-outline-danger"> 추천
